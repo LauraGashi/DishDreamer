@@ -1,0 +1,110 @@
+.RecepieDetails{
+    padding: 10px;
+    background-color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+.Content {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Add space between the two sections */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between the sections */
+    padding: 50px 20px;
+}
+.ImageDetails {
+    flex: 1; /* Make this section take up half the width */
+    max-width: 50%; /* Ensure it doesn't exceed half the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.ImageDetails img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+.Instructions {
+    margin-top: 10px;
+    flex: 1; /* Make this section take up half the width */
+    max-width: 50%;
+}
+.Instructions p {
+    font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+    font-size: 16px; /* Set an appropriate text size */
+    line-height: 1.8; /* Increase line height for better readability */
+    color: #555; /* Neutral color for text */
+    text-align: justify; /* Align text to look neat in blocks */
+    margin-top: 10px; /* Add space above the paragraph */
+    margin-bottom: 10px; /* Add space below the paragraph */
+    padding: 10px; /* Add inner padding for better spacing */
+    background-color: #f8f8f8; /* Light background for focus */
+    border-radius: 6px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.Instructions h3 {
+    color:orangered;
+}
+.RecepieDetails img {
+    border-radius: 5px;
+    max-height: 400px;
+    max-width: 500px;
+    border: 7px solid orangered;
+    box-shadow: 0 5px 7px black;
+}
+.RecepieDetails h1 {
+    text-align: center;
+    color:orangered;
+}
+.Ingredients {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; 
+}
+.Ingredients li {
+    font-size: 16px; /* Adjust font size */
+    font-weight: 500; /* Slightly bold */
+    line-height: 1.8; /* Add line height for better readability */
+    padding: 8px 12px; /* Add some spacing */
+    margin: 4px 0; /* Add vertical spacing */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Use flex to align content */
+    align-items: center; /* Center align the icon and text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.Ingredients li::before {
+    content: '🍴'; /* Add a food icon */
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 18px; /* Adjust icon size */
+    color: #ff6347; /* Tomato color for the icon */
+}
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: blue; /* Link color */
+    text-decoration: underline;
+}
+.CloseButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
